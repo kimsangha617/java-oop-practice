@@ -12,8 +12,9 @@ import java.util.List;
  두 타입이 어느쪽이 크고작은가 비교하기 위해서 준비되어있는 class
  Comparable  있다
   */
-public class BubbleSort <T extends Comparable<T>> {
+public class BubbleSort <T extends Comparable<T>> implements Sort<T>{
 
+    @Override
     public List<T> sort(List<T> list){
         List<T> output = new ArrayList<>(list);
 
